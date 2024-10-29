@@ -927,32 +927,7 @@ R2 del modelo: 0.6811421964284795
 
 Resumen del modelo OLS:
 
-                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:              SalePrice   R-squared:                       0.658
-Model:                            OLS   Adj. R-squared:                  0.656
-Method:                 Least Squares   F-statistic:                     446.2
-Date:                Mon, 28 Oct 2024   Prob (F-statistic):          2.26e-267
-Time:                        14:22:45   Log-Likelihood:                -13830.
-No. Observations:                1168   AIC:                         2.767e+04
-Df Residuals:                    1162   BIC:                         2.770e+04
-Df Model:                           5                                         
-Covariance Type:            nonrobust                                         
-================================================================================
-                   coef    std err          t      P>|t|      [0.025      0.975]
---------------------------------------------------------------------------------
-const         1.709e+05    985.572    173.416      0.000    1.69e+05    1.73e+05
-OverallQual   1.362e+04   1463.554      9.305      0.000    1.07e+04    1.65e+04
-GrLivArea     2.115e+04   1187.937     17.803      0.000    1.88e+04    2.35e+04
-YearBuilt     9583.6395   1392.214      6.884      0.000    6852.105    1.23e+04
-YearRemodAdd  7862.7193   1300.243      6.047      0.000    5311.634    1.04e+04
-TotalBsmtSF   1.102e+04   1132.506      9.732      0.000    8799.755    1.32e+04
-==============================================================================
-Omnibus:                      114.273   Durbin-Watson:                   1.993
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              369.160
-Skew:                          -0.464   Prob(JB):                     6.88e-81
-Kurtosis:                       5.593   Cond. No.                         2.94
-==============================================================================
+![REsumen de OLS](images/ols.png)
 
 5. Modelos de Regularización Ridge, Lasso y ElasticNet.
 
@@ -1063,6 +1038,7 @@ R2 Score: 0.6811 (en el conjunto de prueba). La regresión Lasso presenta un R2 
 ElasticNet Regression:
 R2 Score: 0.6806 (en el conjunto de prueba). ElasticNet muestra un R2 Score similar al de Ridge, indicando que puede explicar aproximadamente el 68.06% de la variabilidad de la variable objetivo. Aunque combina las características de Ridge y Lasso, su desempeño en términos de R2 no es mejor que el de estos dos modelos.
 
+### Análisis
 Ridge Regression:
 
 Lambda Óptimo: 51.79
