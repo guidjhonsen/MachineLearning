@@ -955,16 +955,19 @@ Resultado del Entrenamiento: Modelado
 ![análisis de residuos](images/histograma_r_L_e.png)
 
  - Ridge Regression
+
 Distribución de Residuos: La mayor parte de los residuos se concentran alrededor de cero.
 
 Forma: Parece bastante simétrica y con una dispersión reducida, lo que indica que los errores están bien distribuidos sin demasiados residuos extremos.
 
  - Lasso Regression
+
 Distribución de Residuos: Similar a la de Ridge, con una concentración alrededor de cero, pero con una ligera dispersión mayor en los valores residuales extremos.
 
 Forma: Es simétrica, pero la presencia de algunos residuos lejanos sugiere que el modelo podría estar penalizando coeficientes, introduciendo más residuos extremos.
 
  - ElasticNet
+
 Distribución de Residuos: La distribución es similar a los otros dos, con una concentración principal alrededor de cero.
 
 Forma: La dispersión parece intermedia entre Ridge y Lasso, combinando características de ambos. Esto se debe a que ElasticNet combina las penalizaciones L1 y L2, tratando de equilibrar la regularización.
