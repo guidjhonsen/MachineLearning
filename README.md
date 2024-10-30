@@ -884,25 +884,26 @@ Se visualizan los primeros registros de las columnas de la variable independient
 2. Escalado de Características - StandardScaler.
 
 Primeros registros de X_train escalado:
-    OverallQual  GrLivArea  GarageCars  GarageArea  YearBuilt  FullBath  \
-0    -0.836836  -0.395851   -1.063674   -0.879551  -0.482928 -1.055566   
-1    -0.096363   0.182702    0.309112   -0.444820   0.719973  0.773664   
-2    -0.836836  -1.561963   -2.436459   -2.365725  -2.053383 -1.055566   
-3    -0.836836   0.626185   -1.063674   -1.152521  -1.151207 -1.055566   
-4    -0.836836   0.452844   -1.063674   -0.808781  -1.585588  0.773664   
 
-   YearRemodAdd  TotalBsmtSF  
-0     -1.346063     0.745503  
-1      0.439214    -0.764376  
-2     -1.683818    -0.773172  
-3     -1.683818    -0.963739  
-4     -1.683818    -0.098857 
+
+|  |  OverallQual|  GrLivArea | GarageCars | GarageArea | YearBuilt | FullBath  |YearRemodAdd | TotalBsmtSF |
+|--|-------------|------------|------------|------------|-----------|-----------|-------------|-------------|
+|0 |   -0.836836 | -0.395851  | -1.063674  | -0.879551  |-0.482928  | -1.055566 |   -1.346063 |    0.745503 | 
+|1 |   -0.096363 |  0.182702  |  0.309112  | -0.444820  | 0.719973  |0.773664   |    0.439214 |   -0.764376 |
+|2 |   -0.836836 | -1.561963  | -2.436459  | -2.365725  |-2.053383  |-1.055566  |   -1.683818 |   -0.773172 |
+|3 |   -0.836836 |  0.626185  | -1.063674  | -1.152521  |-1.151207  |-1.055566  |   -1.683818 |   -0.963739 |
+|4 |   -0.836836 |  0.452844  | -1.063674  | -0.808781  |-1.585588  | 0.773664  |   -1.683818 |   -0.098857 |
+
 
 3. Ingeniería y Selección de Características usando RFE y el Factor de Inflación de Varianza.
 
 Características seleccionadas por RFE:
- Index(['OverallQual', 'GrLivArea', 'YearBuilt', 'YearRemodAdd', 'TotalBsmtSF'], dtype='object')
+
+Index(['OverallQual', 'GrLivArea', 'YearBuilt', 'YearRemodAdd', 'TotalBsmtSF'], dtype='object')
+
 Factor de Inflación de Varianza (VIF) de las características seleccionadas:
+
+
          Feature       VIF
 0   OverallQual  2.205162
 1     GrLivArea  1.452815
@@ -911,11 +912,13 @@ Factor de Inflación de Varianza (VIF) de las características seleccionadas:
 4   TotalBsmtSF  1.320396
 
 Características finales después de RFE y VIF:
- 0     OverallQual
+
+0     OverallQual
 1       GrLivArea
 2       YearBuilt
 3    YearRemodAdd
 4     TotalBsmtSF
+
 Name: Feature, dtype: object
 
 4. Preparación del modelo usando OLS & Regresión Lineal.
