@@ -945,10 +945,10 @@ Resumen del modelo OLS:
 
 Las características de los modelos de regularización Ridge, Lasso y ElasticNet:
 
-Tipo de Aprendizaje: Supervisado
-Paramétrico: Sí
-Datos de Aprendizaje: Generalmente offline
-Resultado del Entrenamiento: Modelado
+ - Tipo de Aprendizaje: Supervisado
+ - Paramétrico: Sí
+ - Datos de Aprendizaje: Generalmente offline
+ - Resultado del Entrenamiento: Modelado
 
 **6. Análisis de Residuos.**
 
