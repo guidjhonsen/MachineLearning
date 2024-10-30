@@ -177,7 +177,7 @@ Puede descargar el código fuente clonando este repositorio usando Git:
 
 https://github.com/guidjhonsen/MachineLearning.git
 
-3. Subir el archivo notebook Proyecto1_ML.ipynb con COLAB.
+3. Subir el archivo notebook Proyecto1_ML.ipynb a COLAB.
 
 
 ## Declaración del Problema
