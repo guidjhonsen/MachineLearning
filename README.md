@@ -1037,38 +1037,50 @@ ElasticNet, al combinar Ridge y Lasso, muestra una capacidad de ajuste equilibra
 
 ### Conclusiones
 
-Ridge Regression:
-R2 Score: 0.6806 (en el conjunto de prueba). La regresión Ridge proporciona un R2 Score razonablemente bueno, indicando que el modelo puede explicar aproximadamente el 68.06% de la variabilidad de la variable objetivo. Esto sugiere que, aunque hay un margen de error, el modelo tiene una capacidad aceptable para realizar predicciones.
+*Ridge Regression:*
 
-Lasso Regression:
-R2 Score: 0.6811 (en el conjunto de prueba). La regresión Lasso presenta un R2 Score ligeramente superior al de Ridge, con un 68.11%. Esto sugiere que Lasso tiene una capacidad mejorada para capturar la variabilidad en los datos y puede ser más efectivo en términos de precisión de predicciones.
+R2 Score: 0.6806 (en el conjunto de prueba).
 
-ElasticNet Regression:
-R2 Score: 0.6806 (en el conjunto de prueba). ElasticNet muestra un R2 Score similar al de Ridge, indicando que puede explicar aproximadamente el 68.06% de la variabilidad de la variable objetivo. Aunque combina las características de Ridge y Lasso, su desempeño en términos de R2 no es mejor que el de estos dos modelos.
+La regresión Ridge proporciona un R2 Score razonablemente bueno, indicando que el modelo puede explicar aproximadamente el 68.06% de la variabilidad de la variable objetivo. Esto sugiere que, aunque hay un margen de error, el modelo tiene una capacidad aceptable para realizar predicciones.
+
+*Lasso Regression:*
+
+R2 Score: 0.6811 (en el conjunto de prueba).
+
+La regresión Lasso presenta un R2 Score ligeramente superior al de Ridge, con un 68.11%. Esto sugiere que Lasso tiene una capacidad mejorada para capturar la variabilidad en los datos y puede ser más efectivo en términos de precisión de predicciones.
+
+*ElasticNet Regression:*
+
+R2 Score: 0.6806 (en el conjunto de prueba).
+
+ElasticNet muestra un R2 Score similar al de Ridge, indicando que puede explicar aproximadamente el 68.06% de la variabilidad de la variable objetivo. Aunque combina las características de Ridge y Lasso, su desempeño en términos de R2 no es mejor que el de estos dos modelos.
 
 ### Análisis
 *Ridge Regression:*
 
-Lambda Óptimo: 51.79
-R2 Score Entrenamiento: 0.6573
-R2 Score Prueba: 0.6806
-RMSE Prueba: 33926.49
+- Lambda Óptimo: 51.79
+- R2 Score Entrenamiento: 0.6573
+- R2 Score Prueba: 0.6806
+- RMSE Prueba: 33926.49
+
 El modelo de Ridge muestra una buena capacidad para explicar la variabilidad en los datos, con un R2 de 0.6806 en el conjunto de prueba. Sin embargo, la diferencia entre los R2 de entrenamiento y prueba es pequeña, lo que sugiere que el modelo está bien ajustado y no sobreajustado. El RMSE indica que hay un error promedio considerable en las predicciones.
 
 *Lasso Regression:*
 
-Lambda Óptimo: 75.43
-R2 Score Entrenamiento: 0.6575
-R2 Score Prueba: 0.6811
-RMSE Prueba: 33899.75
+- Lambda Óptimo: 75.43
+- R2 Score Entrenamiento: 0.6575
+- R2 Score Prueba: 0.6811
+- RMSE Prueba: 33899.75
+
 El modelo de Lasso presenta un R2 de prueba ligeramente superior al de Ridge, lo que sugiere que puede capturar un poco más de variabilidad en los datos. El RMSE es un poco mejor que el de Ridge, lo que implica que las predicciones son, en promedio, más precisas. Lasso es especialmente útil si se busca realizar una selección de características, ya que tiende a eliminar coeficientes de variables menos relevantes.
 
 *ElasticNet Regression:*
 
-Lambda Óptimo: 0.0869
-R2 Score Entrenamiento: 0.6573
-R2 Score Prueba: 0.6806
-RMSE Prueba: 33925.60
+- Lambda Óptimo: 0.0869
+- R2 Score Entrenamiento: 0.6573
+- R2 Score Prueba: 0.6806
+- RMSE Prueba: 33925.60
+
 ElasticNet combina las propiedades de Ridge y Lasso. Los resultados son similares a los de Ridge, con un R2 de prueba de 0.6806 y un RMSE cercano. La baja lambda óptima indica que el modelo no penaliza tanto los coeficientes, lo que puede ser útil en situaciones donde hay correlaciones entre las variables.
 
 
