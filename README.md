@@ -873,7 +873,7 @@ El PCA se utiliza para reducir la dimensionalidad y encontrar combinaciones de v
 
 ### Construcción y Evaluación del Modelo
 
-1. División de datos de entrenamiento y prueba.
+**1. División de datos de entrenamiento y prueba.**
 
 Se dividen los datos de entrenamiento (80%) y prueba (20%)
 
@@ -881,7 +881,7 @@ Se visualizan los primeros registros de las columnas de la variable independient
 
 ![Visualiza los primeros registro](images/DivisiónEntrenamientoPrueba.png)
 
-2. Escalado de Características - StandardScaler.
+**2. Escalado de Características - StandardScaler.**
 
 Primeros registros de X_train escalado:
 
@@ -895,7 +895,7 @@ Primeros registros de X_train escalado:
 |4 |   -0.836836 |  0.452844  | -1.063674  | -0.808781  |-1.585588  | 0.773664  |   -1.683818 |   -0.098857 |
 
 
-3. Ingeniería y Selección de Características usando RFE y el Factor de Inflación de Varianza.
+**3. Ingeniería y Selección de Características usando RFE y el Factor de Inflación de Varianza.**
 
 Características seleccionadas por RFE:
 
@@ -923,7 +923,7 @@ Características finales después de RFE y VIF:
 
 Name: Feature, dtype: object
 
-4. Preparación del modelo usando OLS & Regresión Lineal.
+**4. Preparación del modelo usando OLS & Regresión Lineal.**
 
 Evaluación del modelo usando métricas comunes
 
@@ -935,7 +935,7 @@ Resumen del modelo OLS:
 
 ![REsumen de OLS](images/ols.png)
 
-5. Modelos de Regularización Ridge, Lasso y ElasticNet.
+**5. Modelos de Regularización Ridge, Lasso y ElasticNet.**
 
 - Ridge Regression: Penaliza los coeficientes al cuadrado, reduciendo su tamaño, pero manteniendo todas las variables en el modelo. Es útil cuando hay muchas variables correlacionadas y se desea reducir el sobreajuste.
 
@@ -950,7 +950,7 @@ Paramétrico: Sí
 Datos de Aprendizaje: Generalmente offline
 Resultado del Entrenamiento: Modelado
 
-6. Análisis de Residuos.
+**6. Análisis de Residuos.**
 
 ![análisis de residuos](images/histograma_r_L_e.png)
 
@@ -969,7 +969,7 @@ Distribución de Residuos: La distribución es similar a los otros dos, con una 
 
 Forma: La dispersión parece intermedia entre Ridge y Lasso, combinando características de ambos. Esto se debe a que ElasticNet combina las penalizaciones L1 y L2, tratando de equilibrar la regularización.
 
-7. Evaluación y Valoración del Modelo.
+**7. Evaluación y Valoración del Modelo.**
 
 #### Ridge Regression ####
 * Optimal Lambda Value: 51.79474679231202
@@ -1011,7 +1011,7 @@ R2 Test Score: En el conjunto de prueba, el ( R^2 ) fue de 0.6806, mostrando que
 RMSE Test: El RMSE en el conjunto de prueba fue de 33925.60, reflejando un error de predicción aceptable.
 
 
-8. Predicción.
+**8. Predicción.**
 
 Ejemplos de predicciones:
 
@@ -1033,7 +1033,7 @@ Ejemplos de predicciones:
 Los tres modelos son consistentes y bastante cercanos entre sí, lo que sugiere que el efecto de la regularización es moderado y que la selección de variables no varía drásticamente entre ellos.
 ElasticNet, al combinar Ridge y Lasso, muestra una capacidad de ajuste equilibrada, útil cuando hay muchas variables correlacionadas.
 
-9. Conclusión y Análisis Final.
+**9. Conclusión y Análisis Final.**
 
 ### Conclusiones
 
