@@ -913,6 +913,7 @@ Factor de Inflación de Varianza (VIF) de las características seleccionadas:
 
 Características finales después de RFE y VIF:
 
+|   |              |
 |---|--------------|
 |0  |   OverallQual|
 |1  |     GrLivArea|
