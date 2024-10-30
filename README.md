@@ -912,6 +912,7 @@ Factor de Inflación de Varianza (VIF) de las características seleccionadas:
 |4 |  TotalBsmtSF | 1.320396 |
 
 Características finales después de RFE y VIF:
+
 |---|--------------|
 |0  |   OverallQual|
 |1  |     GrLivArea|
