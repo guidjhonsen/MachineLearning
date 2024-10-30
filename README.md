@@ -902,8 +902,6 @@ Características seleccionadas por RFE:
 Index(['OverallQual', 'GrLivArea', 'YearBuilt', 'YearRemodAdd', 'TotalBsmtSF'], dtype='object')
 
 Factor de Inflación de Varianza (VIF) de las características seleccionadas:
-
-
          Feature       VIF
 0   OverallQual  2.205162
 1     GrLivArea  1.452815
