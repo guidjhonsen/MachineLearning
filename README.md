@@ -989,26 +989,28 @@ Forma: La dispersión parece intermedia entre Ridge y Lasso, combinando caracter
 * R2 Test Score: 0.6806
 * RMSE Test: 33925.60
 
-Interpretación de Resultados
+**Interpretación de Resultados**
 
-Ridge Regression
+*Ridge Regression*
 
-Optimal Lambda Value: El valor óptimo de lambda para la regresión Ridge fue de 51.7947, lo que indica un nivel moderado de regularización.
-R2 Score Train: El ( R^2 ) en el conjunto de entrenamiento fue de 0.6573, lo que sugiere que el modelo explica aproximadamente el 65.73% de la variabilidad de los datos de entrenamiento.
-R2 Test Score: En el conjunto de prueba, el ( R^2 ) fue de 0.6806, lo que indica que el modelo mantiene un buen desempeño al generalizar a nuevos datos.
-RMSE Test: El error cuadrático medio (RMSE) en el conjunto de prueba fue de 33926.49, lo que sugiere que, en promedio, las predicciones se desvían de los valores reales en 33926.49 unidades.
-Lasso Regression
+- Optimal Lambda Value: El valor óptimo de lambda para la regresión Ridge fue de 51.7947, lo que indica un nivel moderado de regularización.
+- R2 Score Train: El ( R^2 ) en el conjunto de entrenamiento fue de 0.6573, lo que sugiere que el modelo explica aproximadamente el 65.73% de la variabilidad de los datos de entrenamiento.
+- R2 Test Score: En el conjunto de prueba, el ( R^2 ) fue de 0.6806, lo que indica que el modelo mantiene un buen desempeño al generalizar a nuevos datos.
+- RMSE Test: El error cuadrático medio (RMSE) en el conjunto de prueba fue de 33926.49, lo que sugiere que, en promedio, las predicciones se desvían de los valores reales en 33926.49 unidades.
 
-Optimal Lambda Value: El valor óptimo de lambda para la regresión Lasso fue de 75.4312, lo que indica un enfoque más agresivo hacia la regularización.
-R2 Score Train: El ( R^2 ) en el conjunto de entrenamiento fue de 0.6575, sugiriendo que el modelo captura un 65.75% de la variabilidad.
-R2 Test Score: En el conjunto de prueba, el ( R^2 ) fue de 0.6811, indicando que el modelo también generaliza bien a datos no vistos.
-RMSE Test: El RMSE en el conjunto de prueba fue de 33899.75, lo que implica una buena precisión en las predicciones.
-ElasticNet Regression
+*Lasso Regression*
 
-Optimal Lambda Value: El valor óptimo de lambda para la regresión ElasticNet fue de 0.0869, combinando propiedades de Ridge y Lasso.
-R2 Score Train: El ( R^2 ) en el conjunto de entrenamiento fue de 0.6573, indicando un desempeño similar al de los modelos anteriores.
-R2 Test Score: En el conjunto de prueba, el ( R^2 ) fue de 0.6806, mostrando que el modelo se adapta adecuadamente a datos nuevos.
-RMSE Test: El RMSE en el conjunto de prueba fue de 33925.60, reflejando un error de predicción aceptable.
+- Optimal Lambda Value: El valor óptimo de lambda para la regresión Lasso fue de 75.4312, lo que indica un enfoque más agresivo hacia la regularización.
+- R2 Score Train: El ( R^2 ) en el conjunto de entrenamiento fue de 0.6575, sugiriendo que el modelo captura un 65.75% de la variabilidad.
+- R2 Test Score: En el conjunto de prueba, el ( R^2 ) fue de 0.6811, indicando que el modelo también generaliza bien a datos no vistos.
+- RMSE Test: El RMSE en el conjunto de prueba fue de 33899.75, lo que implica una buena precisión en las predicciones.
+
+*ElasticNet Regression*
+
+- Optimal Lambda Value: El valor óptimo de lambda para la regresión ElasticNet fue de 0.0869, combinando propiedades de Ridge y Lasso.
+- R2 Score Train: El ( R^2 ) en el conjunto de entrenamiento fue de 0.6573, indicando un desempeño similar al de los modelos anteriores.
+- R2 Test Score: En el conjunto de prueba, el ( R^2 ) fue de 0.6806, mostrando que el modelo se adapta adecuadamente a datos nuevos.
+- RMSE Test: El RMSE en el conjunto de prueba fue de 33925.60, reflejando un error de predicción aceptable.
 
 
 **8. Predicción.**
