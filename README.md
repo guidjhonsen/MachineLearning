@@ -171,13 +171,9 @@ Se requiere que esté instalado previamente:
 
 Puede descargar el código fuente clonando este repositorio usando Git:
 
-1. Abra su aplicación Terminal favorita (Unix, Linux o Macos), como Terminal, Comando, Consola, iTerm2, etc.
+1. Para su ejecución ingresar al siguiente enlace.
 
-2. Clone el repositorio
-
-https://github.com/guidjhonsen/MachineLearning.git
-
-3. Subir el archivo notebook Proyecto1_ML.ipynb a COLAB.
+https://colab.research.google.com/drive/1YNZgD6HtXs3Awp6agHkrY69FNlASxDa7?usp=sharing  
 
 
 ## Declaración del Problema
