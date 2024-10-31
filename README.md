@@ -169,9 +169,7 @@ Se requiere que esté instalado previamente:
 
 ### Cómo Ejecutar
 
-Puede descargar el código fuente clonando este repositorio usando Git:
-
-1. Para su ejecución ingresar al siguiente enlace.
+1. Para su ejecución ingresar al siguiente enlace de google COLAB:
 
 https://colab.research.google.com/drive/1YNZgD6HtXs3Awp6agHkrY69FNlASxDa7?usp=sharing  
 
